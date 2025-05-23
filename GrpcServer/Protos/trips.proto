@@ -1,0 +1,62 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcServer";
+
+package trips;
+
+// The greeting service definition.
+service Trips {
+  // Sends a greeting
+  rpc SayHello (HelloRequest) returns (HelloReply);
+  rpc AddTrip (AddTripRequest) returns (TripResponse);
+  rpc UpdateTrip (UpdateTripRequest) returns (TripResponse);
+  rpc DeleteTrip (DeleteTripRequest) returns (TripResponse);
+  rpc GetTripRatings (GetRatingsRequest) returns (TripRatingsResponse);
+}
+
+// The request message containing the user's name.
+message HelloRequest {
+  string name = 1;
+}
+
+// The response message containing the greetings.
+message HelloReply {
+  string message = 1;
+}
+
+message AddTripRequest {
+  string origin = 1;
+  string destination = 2;
+  string departureDate = 3;
+  string departureTime = 4;
+  int32 seats = 5;
+  int32 pricePerPerson = 6;
+  string petFriendly = 7;
+}
+
+message UpdateTripRequest {
+  int32 tripId = 1;
+  string origin = 2;
+  string destination = 3;
+  string departureDate = 4;
+  string departureTime = 5;
+  int32 seats = 6;
+  int32 pricePerPerson = 7;
+  string petFriendly = 8;
+}
+
+message DeleteTripRequest {
+  int32 tripId = 1;
+}
+
+message GetRatingsRequest {
+  string name = 1;
+}
+message TripRatingsResponse {
+  repeated int32 ratings = 1;
+}
+
+message TripResponse {
+  string message = 1;
+  int32 tripId = 2;
+}

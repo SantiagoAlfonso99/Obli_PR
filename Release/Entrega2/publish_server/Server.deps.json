@@ -1,0 +1,103 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Server/1.0.0": {
+        "dependencies": {
+          "Helpers": "1.0.0",
+          "System.Configuration.ConfigurationManager": "9.0.0-preview.3.24172.9"
+        },
+        "runtime": {
+          "Server.dll": {}
+        }
+      },
+      "System.Configuration.ConfigurationManager/9.0.0-preview.3.24172.9": {
+        "dependencies": {
+          "System.Diagnostics.EventLog": "9.0.0-preview.3.24172.9",
+          "System.Security.Cryptography.ProtectedData": "9.0.0-preview.3.24172.9"
+        },
+        "runtime": {
+          "lib/net8.0/System.Configuration.ConfigurationManager.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.24.17209"
+          }
+        }
+      },
+      "System.Diagnostics.EventLog/9.0.0-preview.3.24172.9": {
+        "runtime": {
+          "lib/net8.0/System.Diagnostics.EventLog.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.24.17209"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net8.0/System.Diagnostics.EventLog.Messages.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.24.17209"
+          },
+          "runtimes/win/lib/net8.0/System.Diagnostics.EventLog.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.24.17209"
+          }
+        }
+      },
+      "System.Security.Cryptography.ProtectedData/9.0.0-preview.3.24172.9": {
+        "runtime": {
+          "lib/net8.0/System.Security.Cryptography.ProtectedData.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.24.17209"
+          }
+        }
+      },
+      "Helpers/1.0.0": {
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "9.0.0-preview.3.24172.9"
+        },
+        "runtime": {
+          "Helpers.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Server/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Configuration.ConfigurationManager/9.0.0-preview.3.24172.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-runfNU7hYhiU7KtXidbvbTKcSHgzRQRjuc6spGbYRAIeqVljo17sNvSpql+5c/ujzR5RRmj7KFvkeq0d3B7PsA==",
+      "path": "system.configuration.configurationmanager/9.0.0-preview.3.24172.9",
+      "hashPath": "system.configuration.configurationmanager.9.0.0-preview.3.24172.9.nupkg.sha512"
+    },
+    "System.Diagnostics.EventLog/9.0.0-preview.3.24172.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OzGq8i0n5iP6ccBkVVIS4HQw3GALSWsAPscZ8ult97sUuNc8e97dH4ZB3XNf2eGev4ajSxBOM6yl9KJFLKrwcA==",
+      "path": "system.diagnostics.eventlog/9.0.0-preview.3.24172.9",
+      "hashPath": "system.diagnostics.eventlog.9.0.0-preview.3.24172.9.nupkg.sha512"
+    },
+    "System.Security.Cryptography.ProtectedData/9.0.0-preview.3.24172.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gabqUZPA1uToMV1QOjulFSJm0Zg2C64ibAeSXCMbN0gMfcAMKL4ckTJyBvj5hcV7iBTGz4QjEVZHDe4Isoh5Vg==",
+      "path": "system.security.cryptography.protecteddata/9.0.0-preview.3.24172.9",
+      "hashPath": "system.security.cryptography.protecteddata.9.0.0-preview.3.24172.9.nupkg.sha512"
+    },
+    "Helpers/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
